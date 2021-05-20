@@ -1,9 +1,8 @@
 package com.example.magicball
 
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -11,7 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //запускаем функцию при нажатии на картинку
-        var magicBall: ImageView = findViewById(R.id.magicBall)
         magicBall.setOnClickListener() {
             answer()
         }
@@ -22,9 +20,7 @@ class MainActivity : AppCompatActivity() {
         var randomIndex: Int = Random.nextInt(messages.size)
         var msg = messages[randomIndex]
         //передаем значение тексту
-        var message: TextView = findViewById(R.id.message)
         message.text = msg
-
     }
     
 }
