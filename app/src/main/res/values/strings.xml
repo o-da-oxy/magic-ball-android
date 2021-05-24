@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Magic Ball</string>
     <string name="greeting">Вопрос?</string>
+    <string name="oneQuestionOnly">Слишком много вопросов...</string>
     <string-array name="messages">
         <item>Да</item>
         <item>Нет</item>
